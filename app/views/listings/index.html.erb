@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Listings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Town</th>
+      <th>Price</th>
+      <th>Style</th>
+      <th>Rooms</th>
+      <th>Bedrooms</th>
+      <th>Fullbaths</th>
+      <th>Halfbaths</th>
+      <th>Basement</th>
+      <th>Garage</th>
+      <th>Listdate</th>
+      <th>Category</th>
+      <th>Taxes</th>
+      <th>Remarks</th>
+      <th>Exterior</th>
+      <th>Hvac</th>
+      <th>Fireplace</th>
+      <th>Lotdescription</th>
+      <th>Addons</th>
+      <th>Yearbuilt</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @listings.each do |listing| %>
+      <tr>
+        <td><%= listing.town %></td>
+        <td><%= listing.price %></td>
+        <td><%= listing.style %></td>
+        <td><%= listing.rooms %></td>
+        <td><%= listing.bedrooms %></td>
+        <td><%= listing.fullbaths %></td>
+        <td><%= listing.halfbaths %></td>
+        <td><%= listing.basement %></td>
+        <td><%= listing.garage %></td>
+        <td><%= listing.listdate %></td>
+        <td><%= listing.category %></td>
+        <td><%= listing.taxes %></td>
+        <td><%= listing.remarks %></td>
+        <td><%= listing.exterior %></td>
+        <td><%= listing.hvac %></td>
+        <td><%= listing.fireplace %></td>
+        <td><%= listing.lotdescription %></td>
+        <td><%= listing.addons %></td>
+        <td><%= listing.yearbuilt %></td>
+        <td><%= link_to 'Show', listing %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Listing', new_listing_path %>

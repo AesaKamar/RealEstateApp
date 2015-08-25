@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  town: MyString
+  price: 9.99
+  style: MyString
+  rooms: 9.99
+  bedrooms: 9.99
+  fullbaths: 9.99
+  halfbaths: 9.99
+  basement: MyString
+  garage: MyString
+  listdate: 2015-08-23
+  category: MyString
+  taxes: 9.99
+  remarks: MyText
+  exterior: MyString
+  hvac: MyString
+  fireplace: 9.99
+  lotdescription: MyString
+  addons: MyText
+  yearbuilt: MyString
+
+two:
+  town: MyString
+  price: 9.99
+  style: MyString
+  rooms: 9.99
+  bedrooms: 9.99
+  fullbaths: 9.99
+  halfbaths: 9.99
+  basement: MyString
+  garage: MyString
+  listdate: 2015-08-23
+  category: MyString
+  taxes: 9.99
+  remarks: MyText
+  exterior: MyString
+  hvac: MyString
+  fireplace: 9.99
+  lotdescription: MyString
+  addons: MyText
+  yearbuilt: MyString

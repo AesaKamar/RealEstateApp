@@ -1,0 +1,29 @@
+<%= simple_form_for(@listing) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :town %>
+    <%= f.input :price %>
+    <%= f.input :style %>
+    <%= f.input :rooms %>
+    <%= f.input :bedrooms %>
+    <%= f.input :fullbaths %>
+    <%= f.input :halfbaths %>
+    <%= f.input :basement %>
+    <%= f.input :garage %>
+    <%= f.input :listdate %>
+    <%= f.input :category %>
+    <%= f.input :taxes %>
+    <%= f.input :remarks %>
+    <%= f.input :exterior %>
+    <%= f.input :hvac %>
+    <%= f.input :fireplace %>
+    <%= f.input :lotdescription %>
+    <%= f.input :addons %>
+    <%= f.input :yearbuilt %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
